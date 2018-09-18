@@ -41,9 +41,9 @@ springboot mybatis generator反向生成model、mapper工具
  
   <table tableName="ad_product" domainObjectName="AdProduct" enableCountByExample="false"
  
-    enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
- 
-    selectByExampleQueryId="false"></table>
+   enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+  
+  </table>
  
   参数具体配置根据实际需求自行配置
 

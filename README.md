@@ -1,12 +1,14 @@
 # boot-mybatis-generator
 springboot mybatis generator反向生成model、mapper工具
 使用方法：
+
 1.在application.properties中配置数据相关参数：
-spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+  <p> spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 spring.datasource.data-username=root
 spring.datasource.data-password=111111
 spring.datasource.url=jdbc:mysql://127.0.0.1:3306/xxxxxx?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&useSSL=false
-2.在generatorConfig.xml配置生成文件的路径
+</p>
+<p>2.在generatorConfig.xml配置生成文件的路径</p>
 
   <p>   <!-- Model模型生成器,用来生成含有主键key的类，记录类 以及查询Example类 
           targetPackage 指定生成的model生成所在的包名,targetProject指定在该项目下所在的路径-->

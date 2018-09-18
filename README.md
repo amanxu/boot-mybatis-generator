@@ -12,13 +12,9 @@ springboot mybatis generator反向生成model、mapper工具
 <p>   <!-- Model模型生成器,用来生成含有主键key的类，记录类 以及查询Example类 
           targetPackage 指定生成的model生成所在的包名,targetProject指定在该项目下所在的路径-->
      <javaModelGenerator targetPackage="com.mybatis.generator.model" targetProject="./src/main/java">
-       <!-- 是否允许子包，即targetPackage.schemaName.tableName -->
        <property name="enableSubPackages" value="false"/>
-       <!-- 是否对model添加 构造函数 -->
        <property name="constructorBased" value="true"/>
-       <!-- 是否对类CHAR类型的列的数据进行trim操作 -->
        <property name="trimStrings" value="true"/>
-       <!-- 建立的Model对象是否 不可改变  即生成的Model对象不会有 setter方法，只有构造方法 -->
        <property name="immutable" value="false"/>
     </javaModelGenerator>   
 </p>
@@ -29,7 +25,6 @@ springboot mybatis generator反向生成model、mapper工具
   </p>
 <p>   <!-- targetPackage：mapper接口dao生成的位置 -->
   <javaClientGenerator type="XMLMAPPER" targetPackage="com.mybatis.generator.mapper" targetProject="./src/main/java">
-     <!-- enableSubPackages:是否让schema作为包的后缀 -->
      <property name="enableSubPackages" value="false"/>
   </javaClientGenerator>
   </p>

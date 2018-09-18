@@ -34,9 +34,7 @@
 
 
         <!-- Model模型生成器,用来生成含有主键key的类，记录类 以及查询Example类
-            targetPackage     指定生成的model生成所在的包名
-            targetProject     指定在该项目下所在的路径
-        -->
+           targetPackage 指定生成的model生成所在的包名,targetProject指定在该项目下所在的路径-->
         <javaModelGenerator targetPackage="com.mybatis.generator.model" targetProject="./src/main/java">
             <!-- 是否允许子包，即targetPackage.schemaName.tableName -->
             <property name="enableSubPackages" value="false"/>
@@ -73,7 +71,7 @@
         schema即为数据库名 tableName为对应的数据库表 domainObjectName是要生成的实体类
         enable*ByExample 是否生成 example类   -->
 
-        <table tableName="ad_material" domainObjectName="AdMaterial" enableCountByExample="false"
+        <table tableName="ad_product" domainObjectName="AdProduct" enableCountByExample="false"
                enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false"></table>
 

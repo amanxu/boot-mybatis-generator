@@ -7,7 +7,8 @@ spring.datasource.data-username=root
 spring.datasource.data-password=111111
 spring.datasource.url=jdbc:mysql://127.0.0.1:3306/xxxxxx?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&useSSL=false
 2.在generatorConfig.xml配置生成文件的路径
-     <!-- Model模型生成器,用来生成含有主键key的类，记录类 以及查询Example类 
+
+  <p>   <!-- Model模型生成器,用来生成含有主键key的类，记录类 以及查询Example类 
           targetPackage 指定生成的model生成所在的包名,targetProject指定在该项目下所在的路径-->
      <javaModelGenerator targetPackage="com.mybatis.generator.model" targetProject="./src/main/java">
        <!-- 是否允许子包，即targetPackage.schemaName.tableName -->
@@ -30,6 +31,7 @@ spring.datasource.url=jdbc:mysql://127.0.0.1:3306/xxxxxx?useUnicode=true&charact
      <!-- enableSubPackages:是否让schema作为包的后缀 -->
      <property name="enableSubPackages" value="false"/>
   </javaClientGenerator>
+  </p>
 3.在generatorConfig.xml文件中配置要反向生成model的表和对应的bean对象名称，如：
   <table tableName="ad_product" domainObjectName="AdProduct" enableCountByExample="false"
     enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
